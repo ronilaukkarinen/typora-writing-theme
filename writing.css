@@ -1,0 +1,298 @@
+@include url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,700,400&subset=latin,latin-ext);
+@include url(http://fonts.googleapis.com/css?family=Merriweather:400italic,700italic,700,400&subset=latin,latin-ext);
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Proxima Nova Regular'),url('./writing/400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Proxima Nova Italic'),url('./writing/400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Proxima Nova Bold'),url('./writing/700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Proxima Nova Bold Italic'),url('./writing/700i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Freight Text';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Freight Text Regular'),url('./writing/ft-400.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Freight Text';
+    font-style: italic;
+    font-weight: normal;
+    src: local('Freight Text Italic'),url('./writing/ft-400i.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Freight Text';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Freight Text Bold'),url('./writing/ft-700.woff') format('woff')
+}
+
+@font-face {
+    font-family: 'Freight Text';
+    font-style: italic;
+    font-weight: bold;
+    src: local('Freight Text Bold Italic'),url('./writing/ft-700i.woff') format('woff')
+}
+
+html {
+	font-size: 14px;
+}
+
+html, body {
+	margin: auto;
+	background: #F7F7F9;
+}
+body {
+	font-family: "Freight Text", Palatino, Times !important;
+  	color: #444;
+	line-height: 1.555;
+	text-align: justify;
+	padding: 2em;
+}
+
+#write {
+	max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 2em;
+	line-height: 1.53;
+}
+
+#write>h2:first-child,
+#write>h3:first-child,
+#write>h4:first-child,
+#write>p:first-child{
+	margin-top: 1.2em;
+}
+
+/* Typography
+-------------------------------------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700 !important;
+}
+
+html {
+  font-size: 1.25em;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {
+  font-size: 2.827em;
+}
+
+h3 {
+  font-size: 1.999em;
+}
+
+h4 {
+  font-size: 1.414em;
+}
+
+small,
+.font_small {
+  font-size: 0.707em;
+}
+
+p,
+.mathjax-block {
+	margin-top: 0;
+	-webkit-hypens: auto;
+	-moz-hypens: auto;
+	hyphens: auto;
+}
+ul {
+	list-style: square;
+	padding-left: 1.2em;
+}
+ol {
+	padding-left: 1.2em;
+}
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	border-left: 1px solid #ddd;
+}
+code,
+pre {
+	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+	font-size: .9em;
+	background: white;
+}
+pre.md-fences{
+	margin-left: 1em;
+	padding-left: 1em;
+	border: 1px solid #ddd;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	margin-bottom: 1.5em;
+}
+
+a {
+	color: #2484c1;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a img {
+	border: none;
+}
+h1 a,
+h1 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+hr {
+	color: #ddd;
+	height: 1px;
+	margin: 2em 0;
+	border-top: solid 1px #ddd;
+	border-bottom: none;
+	border-left: 0;
+	border-right: 0;
+}
+table {
+	margin-bottom: 1.333333rem
+}
+table th,
+table td {
+	padding: 8px;
+	line-height: 1.333333rem;
+	vertical-align: top;
+	border-top: 1px solid #ddd
+}
+table th {
+	font-weight: bold
+}
+table thead th {
+	vertical-align: bottom
+}
+table caption+thead tr:first-child th,
+table caption+thead tr:first-child td,
+table colgroup+thead tr:first-child th,
+table colgroup+thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+	border-top: 0
+}
+table tbody+tbody {
+	border-top: 2px solid #ddd
+}
+
+.task-list{
+	padding:0;
+}
+
+.task-list-item {
+	padding-left: 1.6rem;
+}
+
+.task-list-item input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.33333333rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #fefefe;
+}
+
+.task-list-item input:checked:before,
+.task-list-item input[checked]:before{
+	color: inherit;
+}
+.md-tag {
+	color: inherit;
+	font: inherit;
+}
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+}
+#write pre.md-meta-block {
+	white-space: pre;
+	background: #f8f8f8;
+	border: 0px;
+	color: #999;
+	border-left: 1000px #f8f8f8 solid;
+	margin-left: -1000px;
+	border-right: 1000px #f8f8f8 solid;
+	margin-right: -1000px;
+	margin-bottom: 2em;
+	margin-top: -1.3333333333333rem;
+	padding-top: 26px;
+	padding-bottom: 10px;
+	line-height: 1.8em;
+	font-size: 0.9em;
+	font-size: 0.76em;
+	padding-left: 0;
+}
+.md-img-error.md-image>.md-meta{
+	vertical-align: bottom;
+}
+#write>h5.md-focus:before {
+	top: 2px;
+}
+
+.md-toc {
+	margin-top: 40px;
+}
+
+.md-toc-content {
+	padding-bottom: 20px;
+}
+
+.outline-expander:before {
+	color: inherit;
+	font-size: 14px;
+	top: auto;
+	content: "\f0da";
+	font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  	content: "\f0d7";
+}
