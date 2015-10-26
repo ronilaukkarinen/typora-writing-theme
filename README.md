@@ -1,6 +1,6 @@
 # A distract-free Writing theme for Typora
 
-Typora CSS theme. Plain and simple. Aiming for the [Medium](medium.com)-like writing experience.
+Typora CSS theme. Plain and simple. Aiming for the [Medium](http://medium.com)-like writing experience.
 
 ### Installation
 
