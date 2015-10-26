@@ -2,6 +2,8 @@
 
 Typora CSS theme. Plain and simple. Aiming for the [Medium](http://medium.com)-like writing experience.
 
+![Screenshot](https://raw.githubusercontent.com/ronilaukkarinen/typora-writing-theme/master/screenshots/screenshot.png "Screenshot")
+
 ### Installation
 
 1. Download this repo and unpack CSS.
