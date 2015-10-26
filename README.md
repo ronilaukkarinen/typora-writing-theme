@@ -5,7 +5,7 @@ Typora CSS theme. Plain and simple. Aiming for the [Medium](medium.com)-like wri
 ### Installation
 
 1. Download this repo and unpack CSS.
-2. Open [Typora](typora.io).
+2. Open [Typora](http://typora.io).
 3. Select Preferences > Open Theme Folder
 4. Copy writing.css to the Theme folder
 
