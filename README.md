@@ -18,14 +18,14 @@ All fonts are just regular, **bold**, *regular italic* and ***bold italic***.
 
 ### Recommended fonts
 
-Paragraphs (preferred): [Charter](https://www.myfonts.com/fonts/itc/charter/)
+##### Paragraphs (preferred): [Charter](https://www.myfonts.com/fonts/itc/charter/)
 ![Screenshot](https://dl.dropboxusercontent.com/u/18447700/charter.png "Screenshot")
 
-Paragraphs (alternative): [Freight Text](https://www.myfonts.com/fonts/garagefonts/freight-text/)
+##### Paragraphs (alternative): [Freight Text](https://www.myfonts.com/fonts/garagefonts/freight-text/)
 ![Screenshot](https://dl.dropboxusercontent.com/u/18447700/freight.png "Screenshot")
 
-Headings (preferred): [Kievit](http://www.myfonts.com/fonts/fontfont/kievit/)
+##### Headings (preferred): [Kievit](http://www.myfonts.com/fonts/fontfont/kievit/)
 ![Screenshot](https://dl.dropboxusercontent.com/u/18447700/kievit.png "Screenshot")
 
-Headings (alternative): [Proxima Nova](https://www.myfonts.com/fonts/marksimonson/proxima-nova/webfont_preview.html)
+##### Headings (alternative): [Proxima Nova](https://www.myfonts.com/fonts/marksimonson/proxima-nova/webfont_preview.html)
 ![Screenshot](https://dl.dropboxusercontent.com/u/18447700/proximanova.png "Screenshot")
