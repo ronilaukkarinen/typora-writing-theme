@@ -256,6 +256,14 @@ blockquote {
   margin-left: 1em;
   padding-left: 1em;
   border-left: 1px solid #ddd;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+blockquote p {
+  font-style: normal;
+  margin-bottom: 0;
 }
 
 code,
