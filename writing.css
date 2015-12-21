@@ -1,103 +1,194 @@
-@include url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400italic,700italic,700,400&subset=latin,latin-ext);
-@include url(http://fonts.googleapis.com/css?family=Merriweather:400italic,700italic,700,400&subset=latin,latin-ext);
+@include url(http: //fonts.googleapis.com/css?family=Source+Sans+Pro: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
+@include url(http: //fonts.googleapis.com/css?family=Merriweather: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
 
 @font-face {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Proxima Nova Regular'),url('./writing/400.woff') format('woff')
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Proxima Nova Regular'), url('./writing/400.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Proxima Nova';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Proxima Nova Italic'),url('./writing/400i.woff') format('woff')
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Proxima Nova Italic'), url('./writing/400i.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Proxima Nova';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Proxima Nova Bold'),url('./writing/700.woff') format('woff')
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Proxima Nova Bold'), url('./writing/700.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Proxima Nova';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Proxima Nova Bold Italic'),url('./writing/700i.woff') format('woff')
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Proxima Nova Bold Italic'), url('./writing/700i.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Freight Text';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Freight Text Regular'),url('./writing/ft-400.woff') format('woff')
+  font-family: 'Freight Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Freight Text Regular'), url('./writing/ft-400.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Freight Text';
-    font-style: italic;
-    font-weight: normal;
-    src: local('Freight Text Italic'),url('./writing/ft-400i.woff') format('woff')
+  font-family: 'Freight Text';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Freight Text Italic'), url('./writing/ft-400i.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Freight Text';
-    font-style: normal;
-    font-weight: bold;
-    src: local('Freight Text Bold'),url('./writing/ft-700.woff') format('woff')
+  font-family: 'Freight Text';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Freight Text Bold'), url('./writing/ft-700.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Freight Text';
-    font-style: italic;
-    font-weight: bold;
-    src: local('Freight Text Bold Italic'),url('./writing/ft-700i.woff') format('woff')
+  font-family: 'Freight Text';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Freight Text Bold Italic'), url('./writing/ft-700i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Charter Regular'), url('./writing/c-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Charter Italic'), url('./writing/c-400i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Charter Bold'), url('./writing/c-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Charter Bold Italic'), url('./writing/c-700i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Kievit Book'), url('./writing/k-400.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Kievit Book Italic'), url('./writing/k-400i.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Kievit Bold'), url('./writing/k-700.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Kievit Bold Italic'), url('./writing/k-700i.woff') format('woff');
 }
 
 html {
-	font-size: 100%;
+  font-size: 100%;
 }
 
-html, body {
-	margin: auto;
-	background: #F7F7F9;
-}
+html,
 body {
-	font-family: "Freight Text", Palatino, Times !important;
-  	color: #444;
-	line-height: 1.555;
-	text-align: justify;
-	padding: 2em;
-	font-size: 1.3rem;
+  margin: auto;
+  background: #F7F7F9;
+}
+
+body {
+  line-height: 1.555;
+  text-align: justify;
+  padding: 2em;
+  font-size: 1.3rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
 }
 
 #write {
-	max-width: 700px;
-	margin: 0 auto;
-	margin-bottom: 2em;
-	line-height: 1.53;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  line-height: 1.53;
 }
 
-#write>h2:first-child,
-#write>h3:first-child,
-#write>h4:first-child,
-#write>p:first-child{
-	margin-top: 1.2em;
+#write > h2:first-child,
+#write > h3:first-child,
+#write > h4:first-child,
+#write > p:first-child {
+  margin-top: 1.2em;
 }
 
 /* Typography
 -------------------------------------------------------- */
+body,
+p {
+  font-family: "Merriweather", "Charter", "Freight Text", Palatino, Times !important;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+  color: rgba(0, 0, 0, .8);
+}
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700 !important;
+a {
+  color: rgba(0, 0, 0, .8) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Source Sans Pro", "Kievit", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 p {
   margin-bottom: 1.3em;
+}
+
+p a {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+  background-repeat: repeat-x;
+  background-size: 2px 2px;
+  background-position: 0 22px;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 h1,
@@ -133,163 +224,192 @@ small,
 
 p,
 .mathjax-block {
-	margin-top: 0;
-	-webkit-hypens: auto;
-	-moz-hypens: auto;
-	hyphens: auto;
+  margin-top: 0;
+  -webkit-hypens: auto;
+  -moz-hypens: auto;
+  hyphens: auto;
 }
+
 ul {
-	list-style: square;
-	padding-left: 1.2em;
+  list-style: none;
+  padding-left: 1.2em;
 }
+
+ul>li:before {
+    font-size: 16.8px;
+    padding-top: 4px;
+    padding-right: 15px;
+    content: "•";
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 58px;
+    margin-left: -58px;
+    text-align: right;
+}
+
 ol {
-	padding-left: 1.2em;
+  padding-left: 1.2em;
 }
+
 blockquote {
-	margin-left: 1em;
-	padding-left: 1em;
-	border-left: 1px solid #ddd;
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid #ddd;
 }
+
 code,
 pre {
-	font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
-	font-size: .9em;
-	background: white;
+  font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+  font-size: .9em;
+  background: white;
 }
-pre.md-fences{
-	margin-left: 1em;
-	padding-left: 1em;
-	border: 1px solid #ddd;
-	padding-bottom: 8px;
-	padding-top: 6px;
-	margin-bottom: 1.5em;
+
+pre.md-fences {
+  margin-left: 1em;
+  padding-left: 1em;
+  border: 1px solid #ddd;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  margin-bottom: 1.5em;
 }
 
 a {
-	color: #2484c1;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
-}
-a img {
-	border: none;
-}
-h1 a,
-h1 a:hover {
-	color: #333;
-	text-decoration: none;
-}
-hr {
-	color: #ddd;
-	height: 1px;
-	margin: 2em 0;
-	border-top: solid 1px #ddd;
-	border-bottom: none;
-	border-left: 0;
-	border-right: 0;
-}
-table {
-	margin-bottom: 1.333333rem
-}
-table th,
-table td {
-	padding: 8px;
-	line-height: 1.333333rem;
-	vertical-align: top;
-	border-top: 1px solid #ddd
-}
-table th {
-	font-weight: bold
-}
-table thead th {
-	vertical-align: bottom
-}
-table caption+thead tr:first-child th,
-table caption+thead tr:first-child td,
-table colgroup+thead tr:first-child th,
-table colgroup+thead tr:first-child td,
-table thead:first-child tr:first-child th,
-table thead:first-child tr:first-child td {
-	border-top: 0
-}
-table tbody+tbody {
-	border-top: 2px solid #ddd
+  color: #2484c1;
+  text-decoration: none;
 }
 
-.task-list{
-	padding:0;
+a img {
+  border: none;
+}
+
+h1 a,
+h1 a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+hr {
+  color: #ddd;
+  height: 1px;
+  margin: 2em 0;
+  border-top: solid 1px #ddd;
+  border-bottom: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+table {
+  margin-bottom: 1.333333rem;
+}
+
+table th,
+table td {
+  padding: 8px;
+  line-height: 1.333333rem;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+table th {
+  font-weight: bold;
+}
+
+table thead th {
+  vertical-align: bottom;
+}
+
+table caption + thead tr:first-child th,
+table caption + thead tr:first-child td,
+table colgroup + thead tr:first-child th,
+table colgroup + thead tr:first-child td,
+table thead:first-child tr:first-child th,
+table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+.task-list {
+  padding: 0;
 }
 
 .task-list-item {
-	padding-left: 1.6rem;
+  padding-left: 1.6rem;
 }
 
 .task-list-item input:before {
-	content: '\221A';
-	display: inline-block;
-	width: 1.33333333rem;
-  	height: 1.6rem;
-	vertical-align: middle;
-	text-align: center;
-	color: #ddd;
-	background-color: #fefefe;
+  content: '\221A';
+  display: inline-block;
+  width: 1.33333333rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ddd;
+  background-color: #fefefe;
 }
 
 .task-list-item input:checked:before,
-.task-list-item input[checked]:before{
-	color: inherit;
+.task-list-item input[checked]:before {
+  color: inherit;
 }
+
 .md-tag {
-	color: inherit;
-	font: inherit;
+  color: inherit;
+  font: inherit;
 }
+
 #write pre.md-meta-block {
-	min-height: 35px;
-	padding: 0.5em 1em;
+  min-height: 35px;
+  padding: 0.5em 1em;
 }
+
 #write pre.md-meta-block {
-	white-space: pre;
-	background: #f8f8f8;
-	border: 0px;
-	color: #999;
-	border-left: 1000px #f8f8f8 solid;
-	margin-left: -1000px;
-	border-right: 1000px #f8f8f8 solid;
-	margin-right: -1000px;
-	margin-bottom: 2em;
-	margin-top: -1.3333333333333rem;
-	padding-top: 26px;
-	padding-bottom: 10px;
-	line-height: 1.8em;
-	font-size: 0.9em;
-	font-size: 0.76em;
-	padding-left: 0;
+  white-space: pre;
+  background: #f8f8f8;
+  border: 0px;
+  color: #999;
+  border-left: 1000px #f8f8f8 solid;
+  margin-left: -1000px;
+  border-right: 1000px #f8f8f8 solid;
+  margin-right: -1000px;
+  margin-bottom: 2em;
+  margin-top: -1.3333333333333rem;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  line-height: 1.8em;
+  font-size: 0.9em;
+  font-size: 0.76em;
+  padding-left: 0;
 }
-.md-img-error.md-image>.md-meta{
-	vertical-align: bottom;
+
+.md-img-error.md-image > .md-meta {
+  vertical-align: bottom;
 }
-#write>h5.md-focus:before {
-	top: 2px;
+
+#write > h5.md-focus:before {
+  top: 2px;
 }
 
 .md-toc {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 
 .md-toc-content {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .outline-expander:before {
-	color: inherit;
-	font-size: 14px;
-	top: auto;
-	content: "\f0da";
-	font-family: FontAwesome;
+  color: inherit;
+  font-size: 14px;
+  top: auto;
+  content: "\f0da";
+  font-family: FontAwesome;
 }
 
 .outline-expander:hover:before,
-.outline-item-open>.outline-item>.outline-expander:before {
-  	content: "\f0d7";
+.outline-item-open > .outline-item > .outline-expander:before {
+  content: "\f0d7";
 }
