@@ -10,7 +10,7 @@ Typora CSS theme. Plain and simple. Aiming for the [Medium](http://medium.com)-l
 2. Open [Typora](http://typora.io).
 3. Select Preferences > Open Theme Folder
 4. Copy writing.css to the Theme folder
-5. Purchase fonts of your choice and add them to `writing` subdirectory in Theme folder. Fonts used in Medium.com between 2013 to 2015 are predefined in writing.css.
+5. Purchase webfonts of your choice and place them to the `writing` subdirectory in Theme folder (create new folder if it doesn't exist). Fonts used in Medium.com between 2013 to 2015 are predefined in writing.css, note you will only need woff-files which are named accordingly.
 
 **Please note:** You can use any fonts with this theme. You will need to create `writing` subdirectory and place your downloaded or purchased fonts that directory. By default this theme uses [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro) in Headings and [Merriweather](https://www.google.com/fonts/specimen/Merriweather) in paragraphs which are pretty close free alternatives to Medium's fonts.
 
