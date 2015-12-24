@@ -1,4 +1,5 @@
 @include url(http: //fonts.googleapis.com/css?family=Source+Sans+Pro: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
+
 @include url(http: //fonts.googleapis.com/css?family=Merriweather: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
 
 @font-face {
@@ -152,7 +153,7 @@ body {
 -------------------------------------------------------- */
 body,
 p {
-  font-family: "Merriweather", "Charter", "Freight Text", Palatino, Times !important;
+  font-family: "Charter", "Merriweather", "Freight Text", Palatino, Times !important;
   line-height: 1.58;
   letter-spacing: -0.003em;
   color: rgba(0, 0, 0, .8);
@@ -168,7 +169,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", "Kievit", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Kievit", "Source Sans Pro", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
   font-style: normal;
   line-height: 1.15;
@@ -177,11 +178,14 @@ h6 {
 
 p {
   margin-bottom: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
 }
 
 p a {
   text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.6) 50%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
   background-repeat: repeat-x;
   background-size: 2px 2px;
   background-position: 0 22px;
@@ -233,19 +237,22 @@ p,
 ul {
   list-style: none;
   padding-left: 1.2em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
 }
 
-ul>li:before {
-    font-size: 16.8px;
-    padding-top: 4px;
-    padding-right: 15px;
-    content: "•";
-    position: absolute;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 58px;
-    margin-left: -58px;
-    text-align: right;
+ul > li:before {
+  font-size: 16.8px;
+  padding-top: 4px;
+  padding-right: 15px;
+  content: "•";
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 58px;
+  margin-left: -58px;
+  text-align: right;
 }
 
 ol {
@@ -259,6 +266,9 @@ blockquote {
   font-style: normal;
   line-height: 1.15;
   letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
 }
 
 blockquote p {
