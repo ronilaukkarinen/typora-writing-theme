@@ -1,117 +1,116 @@
 @include url(http: //fonts.googleapis.com/css?family=Source+Sans+Pro: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
-
 @include url(http: //fonts.googleapis.com/css?family=Merriweather: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
 
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: normal;
-  src: local('Proxima Nova Regular'), url('./writing/400.woff') format('woff');
+  src: local('Proxima Nova Regular'), url('./writing/ProximaNova.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
   font-style: italic;
   font-weight: normal;
-  src: local('Proxima Nova Italic'), url('./writing/400i.woff') format('woff');
+  src: local('Proxima Nova Italic'), url('./writing/ProximaNovaItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: bold;
-  src: local('Proxima Nova Bold'), url('./writing/700.woff') format('woff');
+  src: local('Proxima Nova Bold'), url('./writing/ProximaNovaBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Proxima Nova';
   font-style: italic;
   font-weight: bold;
-  src: local('Proxima Nova Bold Italic'), url('./writing/700i.woff') format('woff');
+  src: local('Proxima Nova Bold Italic'), url('./writing/ProximaNovaBoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Freight Text';
   font-style: normal;
   font-weight: normal;
-  src: local('Freight Text Regular'), url('./writing/ft-400.woff') format('woff');
+  src: local('Freight Text Regular'), url('./writing/FreightText.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Freight Text';
   font-style: italic;
   font-weight: normal;
-  src: local('Freight Text Italic'), url('./writing/ft-400i.woff') format('woff');
+  src: local('Freight Text Italic'), url('./writing/FreightTextItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Freight Text';
   font-style: normal;
   font-weight: bold;
-  src: local('Freight Text Bold'), url('./writing/ft-700.woff') format('woff');
+  src: local('Freight Text Bold'), url('./writing/FreightTextBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Freight Text';
   font-style: italic;
   font-weight: bold;
-  src: local('Freight Text Bold Italic'), url('./writing/ft-700i.woff') format('woff');
+  src: local('Freight Text Bold Italic'), url('./writing/FreightTextBoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Charter';
   font-style: normal;
   font-weight: normal;
-  src: local('Charter Regular'), url('./writing/c-400.woff') format('woff');
+  src: local('Charter Regular'), url('./writing/Charter.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Charter';
   font-style: italic;
   font-weight: normal;
-  src: local('Charter Italic'), url('./writing/c-400i.woff') format('woff');
+  src: local('Charter Italic'), url('./writing/CharterItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Charter';
   font-style: normal;
   font-weight: bold;
-  src: local('Charter Bold'), url('./writing/c-700.woff') format('woff');
+  src: local('Charter Bold'), url('./writing/CharterBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Charter';
   font-style: italic;
   font-weight: bold;
-  src: local('Charter Bold Italic'), url('./writing/c-700i.woff') format('woff');
+  src: local('Charter Bold Italic'), url('./writing/CharterBoldItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Kievit';
   font-style: normal;
   font-weight: normal;
-  src: local('Kievit Book'), url('./writing/k-400.woff') format('woff');
+  src: local('Kievit Book'), url('./writing/Kievit.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Kievit';
   font-style: italic;
   font-weight: normal;
-  src: local('Kievit Book Italic'), url('./writing/k-400i.woff') format('woff');
+  src: local('Kievit Book Italic'), url('./writing/KievitItalic.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Kievit';
   font-style: normal;
   font-weight: bold;
-  src: local('Kievit Bold'), url('./writing/k-700.woff') format('woff');
+  src: local('Kievit Bold'), url('./writing/KievitBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Kievit';
   font-style: italic;
   font-weight: bold;
-  src: local('Kievit Bold Italic'), url('./writing/k-700i.woff') format('woff');
+  src: local('Kievit Bold Italic'), url('./writing/KievitItalic.woff') format('woff');
 }
 
 html {
@@ -136,7 +135,7 @@ body {
 }
 
 #write {
-  max-width: 700px;
+  max-width: 752px;
   margin: 0 auto;
   margin-bottom: 2em;
   line-height: 1.53;
@@ -206,19 +205,38 @@ h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 3.998em;
+  font-size: 40px;
+  line-height: 48px;
+  color: #101010;
+  margin-top: 21px;
+}
+
+h1:first-child {
+  margin-top: 80px;
 }
 
 h2 {
-  font-size: 2.827em;
+  font-size: 36px;
+  line-height: 40px;
+  color: #202123;
+}
+
+h2:first-child {
+  margin-top: 40px;
 }
 
 h3 {
-  font-size: 1.999em;
+  font-size: 24px;
+  line-height: 32px;
+  color: #202123;
 }
 
-h4 {
-  font-size: 1.414em;
+h4,
+h5,
+h6 {
+  font-size: 21px;
+  line-height: 32px;
+  color: #a5a7ae;
 }
 
 small,
