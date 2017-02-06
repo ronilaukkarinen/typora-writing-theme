@@ -107,11 +107,25 @@
 }
 
 @font-face {
-  font-family: 'Kievit';
-  font-style: italic;
-  font-weight: bold;
-  src: local('Kievit Bold Italic'), url('./writing/Kievit-Italic.woff') format('woff');
+  font-family: 'Tiempos';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tiempos Text Regular'), url('./writing/TiemposText-Regular.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Tiempos';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Tiempos Headline Regular Italic'), url('./writing/TiemposHeadline-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  font-weight: bold;
+  src: local('Tiempos Text Bold'), url('./writing/TiemposText-Bold.woff') format('woff');
+}
+
 
 html {
   font-size: 100%;
@@ -152,14 +166,20 @@ body {
 -------------------------------------------------------- */
 body,
 p {
-  font-family: "Charter", "Merriweather", "Freight Text", Palatino, Times !important;
+  font-family: "Tiempos", "Merriweather", "Freight Text", Palatino, Times !important;
   line-height: 1.58;
   letter-spacing: -0.003em;
   color: rgba(0, 0, 0, .8);
 }
 
-a {
-  color: rgba(0, 0, 0, .8) !important;
+a,
+a:link,
+a:visited,
+a:active {
+  color: #404247;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+  box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 #404247;
 }
 
 h1,
@@ -168,7 +188,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Kievit", "Source Sans Pro", "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Tiempos", "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
   font-style: normal;
   line-height: 1.15;
@@ -179,15 +199,10 @@ p {
   margin-bottom: 1.3em;
   font-weight: 400;
   font-style: normal;
-  font-size: 21px;
-}
-
-p a {
-  text-decoration: none;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 50%);
-  background-repeat: repeat-x;
-  background-size: 2px 2px;
-  background-position: 0 22px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #404247;
+  overflow: visible;
 }
 
 a:hover {
@@ -234,9 +249,11 @@ h3 {
 h4,
 h5,
 h6 {
+  font-family: "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   line-height: 32px;
   color: #a5a7ae;
+  font-weight: 400;
 }
 
 small,
