@@ -2,9 +2,11 @@
 
 Typora CSS theme. Plain and simple. Aiming for the [Medium](http://medium.com)-like writing experience.
 
-![Screenshot 1](https://rolle.wtf/typora-writing-theme-1.png "Screenshot")
+![Screenshot 1](https://i.imgur.com/UOjVbYK.png "Screenshot")
 
-![Screenshot 2](https://rolle.wtf/typora-writing-theme-2.png "Screenshot")
+![Screenshot 2](https://rolle.wtf/typora-writing-theme-1.png "Screenshot")
+
+![Screenshot 3](https://rolle.wtf/typora-writing-theme-2.png "Screenshot")
 
 ### Installation
 

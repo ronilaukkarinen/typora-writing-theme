@@ -2,6 +2,42 @@
 @include url(http: //fonts.googleapis.com/css?family=Merriweather: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
 
 @font-face {
+  font-family: 'Spectral';
+  font-weight: 400;
+  src: local('spectral-regular'), url('./writing/spectral-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 400;
+  src: local('circularstd-book'), url('./writing/circularstd-book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 700;
+  src: local('circularstd-bold'), url('./writing/circularstd-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  src: local('SofiaPro-Regular'), url('./writing/SofiaPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 700;
+  src: local('SofiaPro-Bold'), url('./writing/SofiaPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  src: local('SofiaPro-Regular'), url('./writing/SofiaPro-Regular.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Proxima Nova';
   font-style: normal;
   font-weight: normal;
@@ -126,6 +162,12 @@
   src: local('Tiempos Text Bold'), url('./writing/TiemposText-Bold.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Futura';
+  font-weight: bold;
+  src: local('FuturaStd Bold'), url('./writing/FuturaStd-Bold.woff') format('woff');
+}
+
 
 html {
   font-size: 100%;
@@ -166,7 +208,7 @@ body {
 -------------------------------------------------------- */
 body,
 p {
-  font-family: "Tiempos", "Merriweather", "Freight Text", Palatino, Times !important;
+  font-family: "Spectral", "Merriweather", "Freight Text", Palatino, Times !important;
   line-height: 1.58;
   letter-spacing: -0.003em;
   color: rgba(0, 0, 0, .8);
@@ -188,11 +230,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Tiempos", "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Sofia Pro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
   font-style: normal;
   line-height: 1.15;
   letter-spacing: -0.02em;
+}
+
+h4,
+h5,
+h6 {
+  font-family: "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+  color: #a5a7ae;
+  font-weight: 400;
 }
 
 p {
@@ -244,16 +296,6 @@ h3 {
   font-size: 24px;
   line-height: 32px;
   color: #202123;
-}
-
-h4,
-h5,
-h6 {
-  font-family: "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  line-height: 32px;
-  color: #a5a7ae;
-  font-weight: 400;
 }
 
 small,
