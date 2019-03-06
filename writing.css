@@ -8,6 +8,12 @@
 }
 
 @font-face {
+  font-family: 'Spectral';
+  font-weight: 700;
+  src: local('spectral-bold'), url('./writing/spectral-bold.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Circular';
   font-weight: 400;
   src: local('circularstd-book'), url('./writing/circularstd-book.woff') format('woff');
