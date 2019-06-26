@@ -211,30 +211,30 @@ body {
 
 /* Typography
 -------------------------------------------------------- */
-body,
-p {
+body #write,
+#write p {
   font-family: "Spectral", "Merriweather", "Freight Text", Palatino, Times !important;
   line-height: 1.58;
   letter-spacing: -0.003em;
   color: rgba(0, 0, 0, .9);
 }
 
-a,
-a:link,
-a:visited,
-a:active {
+#write a,
+#write a:link,
+#write a:visited,
+#write a:active {
   color: #404247;
   text-decoration: none;
   text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
   box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 #404247;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
   font-family: "Sofia Pro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700 !important;
   font-style: normal;
@@ -242,9 +242,9 @@ h6 {
   letter-spacing: -0.02em;
 }
 
-h4,
-h5,
-h6 {
+#write h4,
+#write h5,
+#write h6 {
   font-family: "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   line-height: 32px;
@@ -252,7 +252,7 @@ h6 {
   font-weight: 400;
 }
 
-p {
+#write p {
   margin-bottom: 1.3em;
   font-weight: 400;
   font-style: normal;
@@ -379,7 +379,517 @@ a {
   text-decoration: none;
 }
 
-a img {
+#write a img {
+  border: none;
+}
+
+#write h1 a,
+#write h1 a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+#write hr {
+  color: #ddd;
+  height: 1px;
+  margin: 2em 0;
+  border-top: solid 1px #ddd;
+  border-bottom: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+#write table {
+  margin-bottom: 1.333333rem;
+}
+
+#write table th,
+#write table td {
+  padding: 8px;
+  line-height: 1.333333rem;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+#write table th {
+  font-weight: bold;
+}
+
+#write table thead th {
+  vertical-align: bottom;
+}
+
+#write table caption + thead tr:first-child th,
+#write table caption + thead tr:first-child td,
+#write table colgroup + thead tr:first-child th,
+#write table colgroup + thead tr:first-child td,
+#write table thead:first-child tr:first-child th,
+#write table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+
+#write table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+
+#write .task-list {
+  padding: 0;
+}
+
+#write .task-list-item {
+  padding-left: 1.6rem;
+}
+
+#write .task-list-item input:before {
+  content: '\221A';
+  display: inline-block;
+  width: 1.33333333rem;
+  height: 1.6rem;
+  vertical-align: middle;
+  text-align: center;
+  color: #ddd;
+  background-color: #fefefe;
+}
+
+#write .task-list-item input:checked:before,
+#write .task-list-item input[checked]:before {
+  color: inherit;
+}
+
+#write .md-tag {
+  color: inherit;
+  font: inherit;
+}
+
+#write pre.md-meta-block {
+  min-height: 35px;
+  padding: 0.5em 1em;
+}
+
+#write pre.md-meta-block {
+  white-space: pre;
+  background: #f8f8f8;
+  border: 0px;
+  color: #999;
+  border-left: 1000px #f8f8f8 solid;
+  margin-left: -1000px;
+  border-right: 1000px #f8f8f8 solid;
+  margin-right: -1000px;
+  margin-bottom: 2em;
+  margin-top: -1.3333333333333rem;
+  padding-top: 26px;
+  padding-bottom: 10px;
+  line-height: 1.8em;
+  font-size: 0.9em;
+  font-size: 0.76em;
+  padding-left: 0;
+}
+
+.md-img-error.md-image > .md-meta {
+  vertical-align: bottom;
+}
+
+#write > h5.md-focus:before {
+  top: 2px;
+}
+
+.md-toc {
+  margin-top: 40px;
+}
+
+.md-toc-content {
+  padding-bottom: 20px;
+}
+
+.outline-expander:before {
+  color: inherit;
+  font-size: 14px;
+  top: auto;
+  content: "\f0da";
+  font-family: FontAwesome;
+}
+
+.outline-expander:hover:before,
+.outline-item-open > .outline-item > .outline-expander:before {
+  content: "\f0d7";
+}
+@include url(http: //fonts.googleapis.com/css?family=Source+Sans+Pro: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
+@include url(http: //fonts.googleapis.com/css?family=Merriweather: 400italic, 700italic, 700, 400&subset=latin, latin-ext);
+
+@font-face {
+  font-family: 'Spectral';
+  font-weight: 400;
+  src: local('spectral-regular'), url('./writing/spectral-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-weight: 700;
+  src: local('spectral-bold'), url('./writing/spectral-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 400;
+  src: local('circularstd-book'), url('./writing/circularstd-book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Circular';
+  font-weight: 700;
+  src: local('circularstd-bold'), url('./writing/circularstd-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  src: local('SofiaPro-Regular'), url('./writing/SofiaPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 700;
+  src: local('SofiaPro-Bold'), url('./writing/SofiaPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  src: local('SofiaPro-Regular'), url('./writing/SofiaPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Proxima Nova Regular'), url('./writing/ProximaNova.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Proxima Nova Italic'), url('./writing/ProximaNova-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Proxima Nova Bold'), url('./writing/ProximaNova-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Proxima Nova Bold Italic'), url('./writing/ProximaNova-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight Text';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Freight Text Regular'), url('./writing/FreightText.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight Text';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Freight Text Italic'), url('./writing/FreightText-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight Text';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Freight Text Bold'), url('./writing/FreightText-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight Text';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Freight Text Bold Italic'), url('./writing/FreightText-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Charter Regular'), url('./writing/Charter.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Charter Italic'), url('./writing/Charter-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Charter Bold'), url('./writing/Charter-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Charter Bold Italic'), url('./writing/Charter-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Kievit Book'), url('./writing/Kievit.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Kievit Book Italic'), url('./writing/Kievit-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Kievit';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Kievit Bold'), url('./writing/Kievit-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tiempos Text Regular'), url('./writing/TiemposText-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Tiempos Headline Regular Italic'), url('./writing/TiemposHeadline-RegularItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Tiempos';
+  font-weight: bold;
+  src: local('Tiempos Text Bold'), url('./writing/TiemposText-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: bold;
+  src: local('FuturaStd Bold'), url('./writing/FuturaStd-Bold.woff') format('woff');
+}
+
+
+html {
+  font-size: 100%;
+}
+
+html,
+body {
+  margin: auto;
+  background: #fff;
+}
+
+body {
+  line-height: 1.555;
+  padding: 2em;
+  font-size: 1.3rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+#write {
+  max-width: 752px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  line-height: 1.53;
+}
+
+#write > h2:first-child,
+#write > h3:first-child,
+#write > h4:first-child,
+#write > p:first-child {
+  margin-top: 1.2em;
+}
+
+/* Typography
+-------------------------------------------------------- */
+body #write,
+#write p {
+  font-family: "Spectral", "Merriweather", "Freight Text", Palatino, Times !important;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+  color: rgba(0, 0, 0, .9);
+}
+
+#write a,
+#write a:link,
+#write a:visited,
+#write a:active {
+  color: #404247;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+  box-shadow: inset 0 -1px 0 0 #fff, inset 0 -2px 0 0 #404247;
+}
+
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  font-family: "Sofia Pro", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700 !important;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+#write h4,
+#write h5,
+#write h6 {
+  font-family: "Kievit", "Proxima Nova", "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  line-height: 32px;
+  color: #a5a7ae;
+  font-weight: 400;
+}
+
+#write p {
+  margin-bottom: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 34px;
+  color: #404247;
+  overflow: visible;
+}
+
+#write a:hover {
+  text-decoration: none;
+}
+
+#write h1,
+#write h2,
+#write h3,
+#write h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+#write h1 {
+  margin-top: 0;
+  font-size: 40px;
+  line-height: 48px;
+  color: #101010;
+  margin-top: 21px;
+}
+
+#write h1:first-child {
+  margin-top: 80px;
+}
+
+#write h2 {
+  font-size: 36px;
+  line-height: 40px;
+  color: #202123;
+}
+
+#write h2:first-child {
+  margin-top: 40px;
+}
+
+#write h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: #202123;
+}
+
+#write small,
+#write .font_small {
+  font-size: 0.707em;
+}
+
+#write p,
+#write .mathjax-block {
+  margin-top: 0;
+  -webkit-hypens: auto;
+  -moz-hypens: auto;
+  hyphens: auto;
+}
+
+#write ul {
+  list-style: none;
+  padding-left: 1.2em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+
+#write ul > li:before {
+  font-size: 16.8px;
+  padding-top: 4px;
+  padding-right: 15px;
+  content: "•";
+  position: absolute;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 58px;
+  margin-left: -58px;
+  text-align: right;
+}
+
+#write ol {
+  padding-left: 1.2em;
+}
+
+#write blockquote {
+  margin-left: 1em;
+  padding-left: 1em;
+  border-left: 1px solid #ddd;
+  font-style: normal;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+}
+
+#write blockquote p {
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+#write code,
+#write pre {
+  font-family: "Consolas", "Menlo", "Monaco", monospace, serif;
+  font-size: .9em;
+  background: white;
+}
+
+#write pre.md-fences {
+  margin-left: 1em;
+  padding-left: 1em;
+  border: 1px solid #ddd;
+  padding-bottom: 8px;
+  padding-top: 6px;
+  margin-bottom: 1.5em;
+}
+
+#write a img {
   border: none;
 }
 
