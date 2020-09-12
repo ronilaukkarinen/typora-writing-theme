@@ -2,6 +2,8 @@
 
 Typora CSS theme. Plain and simple. Aiming for the [Medium](http://medium.com)-like writing experience.
 
+**NB! I do not update this anymore!** Please check out [typora-novelist-theme].
+
 ![Screenshot 1](https://i.imgur.com/UOjVbYK.png "Screenshot")
 
 ![Screenshot 2](https://rolle.wtf/typora-writing-theme-1.png "Screenshot")
